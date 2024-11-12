@@ -17,7 +17,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.fridrich</groupId>
-  <artifactId>netty-resource-transformer</artifactId>
+  <artifactId>netty-resource-transformers</artifactId>
   <version>0.0.0</version>
   <name>Fridrich's Maven Shade Transformers</name>
   <description>Provides utilities to use with Apache Maven Shade plugin.</description>
