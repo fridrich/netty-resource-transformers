@@ -18,8 +18,8 @@
 
   <groupId>com.github.fridrich</groupId>
   <artifactId>netty-resource-transformers</artifactId>
-  <version>0.0.0</version>
-  <name>Fridrich's Maven Shade Transformers</name>
+  <version>0.0.0-SNAPSHOT</version>
+  <name>Maven Shade Transformers of Netty resources</name>
   <description>Provides utilities to use with Apache Maven Shade plugin.</description>
   <url>https://github.com/fridrich</url>
 
