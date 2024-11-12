@@ -20,6 +20,9 @@ public class NettyResourceTransformer implements ReproducibleResourceTransformer
 
     private long time = Long.MIN_VALUE;
 
+    public NettyResourceTransformer() {
+    }
+
     @Override
     public boolean canTransformResource(String resource) {
         return resource.startsWith("META-INF/native-image/io.netty");
