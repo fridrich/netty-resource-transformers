@@ -25,15 +25,14 @@ public class NettyResourceRenamer implements ReproducibleResourceTransformer {
 
     @Override
     public boolean canTransformResource(String resource) {
-        return resource.startsWith("META-INF/native/");
+        return resource.startsWith("META-INF/native/libnetty") || resource.startsWith("META-INF/native/netty");
     }
 
     @Override
     public void processResource(final String resource, final InputStream is, final List<Relocator> relocators, final long time) throws IOException {
 
         String newResource = resource
-            .replace("META-INF/native/libnetty", "META-INF/native/libio_grpc_netty_shaded_netty")
-            .replace("META-INF/native/netty", "META-INF/native/io_grpc_netty_shaded_netty");
+            .replace("netty", "io_grpc_netty_shaded_netty");
         byte[] content = IOUtils.toByteArray(is);
         resources.put(newResource, content);
     }
